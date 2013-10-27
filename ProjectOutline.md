@@ -21,17 +21,18 @@ This game centers around two units in combat, where the loser is the unit who ru
 ##Phase 2
 In this phase we want to extend the functionality of the game by adding in different unit types.
 
-1. Adding to the Phase 2 starting code, we want to allow the MilitaryUnit to behave differently according to it's type. Change the constructor for Military unit to take in a value corresponding to a different type. Based on this input, the unit will act differently when calling it's functions. Do not add additional classes to the solution for this part.
-  * A unit that gains health for half the amount of damage it does in an attack.
-  * A unit that takes half damage from incoming sources.
-  * A unit that has a save ability. When his health goes below 0, if his health if his health was above 1 before, his health is set to 1.
+1. Adding to the given Phase 2 starting code, we want to allow the military unit to behave differently according to its type. Based on this input, the unit will act differently when calling it's functions. We are not going into inheritance right now. We are just adding the behaviors in the military unit.
+  * A necromancer unit type that gains health for half the amount of damage it does in an attack.
+  * A tank unit type that takes half damage from incoming sources.
+  * A monk unit type that has a save ability. When his health is 0 or goes below 0, he is saved from death with a health of 1 for that round (this only occurs once).
 2. Now, take a look at the inheritance and polymorphism resources provided in the README.md file. 
-3. Use the concepts gathered from part 2 and refactor the your code from part 1 into subclasses of MilitaryUnit using-inheritance.
-4. Add two more subclasses of your own. You should have 5 subclasses at the end of this part.
-5. Look back over the differences between the code derived for part 1 and 3. In a separate file, write a short essay discussing the benefits of using one method over the other. 
+3. Use the concepts gathered from part 2 and refactor the your code from part 1 into subclasses of MilitaryUnit using inheritance.
+4. Add two more types of unit on your own. You should have 5 subclasses at the end of this part.
+5. Look back over the differences between the code derived for part 1 and 3. In a separate file, write a short essay discussing the benefits and comparing having different types using inheritance and without.
 
 ##Phase 3
-Complete the game with the criteria listed below, keeping in mind the good design practices learned in Phase 1 and 2. If anything seems unclear or vague, it is because this part has loose requirements. Just be creative here.
+Complete the game with the criteria listed below, keeping in mind the good design practices learned in Phase 1 and 2.
 
-1. Create a squad that has multiple Units in it. 
-2. Change the logic of DefenseOfTheCodeGame to allow squads to fight.
+1. Add the concept of a squad, which is multiple units. 
+2. Instead of unit fighting a unit, have two players and each player has a squad to fight against each other. The loser is the player who loses all their units.
+3. Add the concept of behavior that affects  part or the whole squad. Example: Splash damage (damage done to multiple units when attacking).
