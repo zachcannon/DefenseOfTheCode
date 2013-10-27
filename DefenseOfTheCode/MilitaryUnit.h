@@ -3,19 +3,15 @@
 using namespace std;
 
 class MilitaryUnit{
-	int attackValue;
-	int defenseValue;
+	string name;
+	int attackDamage;
+	int armorDefense;
 	int health;
 
 public:
-	MilitaryUnit(int attackVal);
-
-	MilitaryUnit* fight(MilitaryUnit *opponent);
-
-	
-	void updateHealth(int damage) {health -= damage;}
-
-	int getAttackValue() {return attackValue;}
-	int getDefenseValue() {return defenseValue;}
-	int getHealth() {return health;}
+	MilitaryUnit(string name, int attackDamage);
+	void fight(MilitaryUnit *opponent);
+	void receiveDamage(int damage);
+	string getName();
+	bool isAlive();
 };

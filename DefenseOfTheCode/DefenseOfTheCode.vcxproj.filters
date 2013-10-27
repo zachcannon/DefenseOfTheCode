@@ -21,7 +21,7 @@
     <ClCompile Include="MilitaryUnit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DefenseOfTheCode.cpp">
+    <ClCompile Include="DefenseOfTheCodeGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

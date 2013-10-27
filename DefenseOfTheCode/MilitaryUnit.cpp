@@ -2,14 +2,19 @@
 
 using namespace std;
 
-MilitaryUnit::MilitaryUnit(int attackVal) {
-	attackValue = attackVal;
-	defenseValue = 5;
+MilitaryUnit::MilitaryUnit(string name, int attackDamage) {
+	this->name = name;
+	this->attackDamage = attackDamage;
+	armorDefense = 5;
 	health = 100;
 };
 
-MilitaryUnit* MilitaryUnit::fight(MilitaryUnit *opponent) {
-	int attackDamage = attackValue - opponent->getDefenseValue();
-	opponent->updateHealth(attackDamage);
-	return opponent;
+void MilitaryUnit::receiveDamage(int damage) {
+	health -= (damage - armorDefense);
+}
+
+string MilitaryUnit::getName() { return name; }
+
+void MilitaryUnit::fight(MilitaryUnit *opponent) {
+	opponent->receiveDamage(attackDamage);
 };

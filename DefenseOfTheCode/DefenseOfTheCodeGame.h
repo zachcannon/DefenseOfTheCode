@@ -1,3 +1,4 @@
+#include <string>
 #include "MilitaryUnit.h"
 
 using namespace std;
@@ -5,13 +6,11 @@ using namespace std;
 class DefenseOfTheCodeGame{
 	MilitaryUnit *unitA;
 	MilitaryUnit *unitB;
-
+	void playRound();
 public:
 	DefenseOfTheCodeGame();
-
-	string playRound();
-
-	bool victoryCheck();
-
-	string declareWinner();
+	void run();
+	bool isGameOver();
+	bool isDraw();
+	string getWinner();
 };
