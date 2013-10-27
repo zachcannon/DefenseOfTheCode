@@ -21,7 +21,7 @@ For more details on the work, go through the project outline.
 ###Phase 2
 - Solution with different types of units without refactoring into inheritance.
 - Refactored solution (inheritance / polymorphism) with more types of units.
-- Essay reflecting on adding additional types through subclass over original solution (maintainability, readability, duplicate code, adding types or behaviors, etc).
+- Essay reflecting on adding additional types through subclass over the first solution in this phase (maintainability, readability, duplicate code, adding types or behaviors, etc).
 
 ###Phase 3
 Complete game solution following good design.
