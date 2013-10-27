@@ -1,11 +1,13 @@
 Project Outline - Defense of the Code!
 ============
 
-In this project we will be focusing on a few areas of good design practices that we have found to be important in day to day application.
+This project focuses on the following design concepts: 
 
 * Code Smells
 * Refactoring Techniques
 * Inheritance and Polymorphic Principles
+
+Identifying code smells and refactoring code is a day to day task in the working world, so it's importance cannot be stressed enough! Inheritance is a powerful tool to use when approprate, and studying it also reinforces one's knowledge of object orented design.
 
 The following project outline is non specific for a reason: we want the project to be relatable and fun! As you will see in the description of each phase, we have give an outline of the problem to solve and some specific tools to use. Adding any additional fun, creative, or quirky features is up to you (and making us smile as we are reading your code is never bad for your grade!) 
 
