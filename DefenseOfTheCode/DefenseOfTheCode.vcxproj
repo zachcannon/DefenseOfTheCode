@@ -64,6 +64,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DefenseOfTheCode.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MilitaryUnit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DefenseOfTheCodeGame.h" />
+    <ClInclude Include="MilitaryUnit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
