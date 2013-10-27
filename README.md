@@ -22,6 +22,7 @@ http://www.refactoring.com/catalog/
 - Hide Delegate
 - Hide Method
 - Inline Method
+
 ###UML Class Diagrams
 Some of the resources use UML class diagrams to explain.
 http://en.wikipedia.org/wiki/Class_diagram
