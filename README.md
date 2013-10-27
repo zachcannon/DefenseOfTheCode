@@ -1,5 +1,7 @@
 Defense of the Code
 ================
+See project outline in ProjectOutline.md.
+
 ##Individual or Pairs
 We encourage collaborating with other students to learn and teach from each other even when working on the project individually. 
 If you want to work as a team (in pairs), then we assume the team will collaborate and divide up the work fairly.
