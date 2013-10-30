@@ -2,17 +2,14 @@ Defense of the Code
 ================
 See project outline in ProjectOutline.md.
 
-##Individual or Pairs
-We encourage collaborating with other students to learn and teach from each other even when working on the project individually. 
-If you want to work as a team (in pairs), then we assume the team will collaborate and divide up the work fairly.
-We will grade based on this assumption.
+We encourage collaborating with other students to learn and teach from each other even when he/she is not your partner. 
 
 ##Submission
 Submit code and short answers on CSNET separately for each phase. 
 We will only require a single submission for each pair or individual.
 ###Deadlines
-1. Phase 1 - Midnight of Sunday, November 3rd
-2. Phase 2 and 3 - Midnight of Sunday, November 17th
+1. Phase 1 - Midnight of Tuesday, November 5th
+2. Phase 2 and 3 - Midnight of Tuesday, November 19th
 
 ##Grading
 For more details on the work, go through the project outline.
