@@ -1,6 +1,6 @@
 Defense of the Code
 ================
-See project outline in ProjectOutline.md.
+See project outline ([ProjectOutline.md](ProjectOutline.md)).
 
 We encourage collaborating with other students to learn and teach from each other even when he/she is not your partner. 
 
