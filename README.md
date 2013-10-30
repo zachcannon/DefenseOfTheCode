@@ -13,6 +13,9 @@ We will only require a single submission for each pair or individual.
 
 ##Grading
 For more details on the work, go through the project outline.
+
+NOTE: The code created/submitted for this project will need to compile and run using g++.
+
 ###Phase 1
 - Short answers (identified code smells, refactoring techniques used to eliminate the identified code smells)
 - Refactored solution.
