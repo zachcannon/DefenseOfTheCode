@@ -7,7 +7,7 @@
     calculatedAttackDamage = attackDamage * 2;
     calculatedArmorDefense = armorDefense * 2;
     calculatedShield = shield * 2;
-    calculatedSpeed = speed *2;
+    calculatedSpeed = speed * 2;
   }
   
   public void applyTripleBuff() {
