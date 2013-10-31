@@ -12,7 +12,8 @@ We will only require a single submission for each pair or individual.
 2. Phase 2 and 3 - Midnight of Tuesday, November 19th
 
 ##Grading
-For more details on the work, go through the project outline.
+For more details on the work, go to [ProjectOutline.md](ProjectOutline.md).
+See [SampleSolution.md](SampleSolution.md) to get an idea of what to submit.
 
 NOTE: The code created/submitted for this project will need to compile and run using g++.
 
