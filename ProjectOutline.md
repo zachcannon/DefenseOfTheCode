@@ -36,4 +36,4 @@ Complete the game with the criteria listed below, keeping in mind the good desig
 1. Add the concept of a squad, which is multiple units. 
 2. Instead of unit fighting a unit, have two players and each player has a squad to fight against each other. The loser is the player who loses all their units.
 3. Add the concept of behavior that affects part or the whole squad. Example: Splash damage (damage done to multiple units when attacking). This is intentionally vague to allow for creativity.
-4. We may prompt the user, how many and what type of units to add to the squad for each player. The order of attack can be the order added or random. Alternating or sequential. Allowing more creativity.
+4. We may prompt the user...how many and what type of units to add to the squad for each player. The order of attack can be the order added or random. Alternating or sequential. Up to you. Allowing for more creativity.
