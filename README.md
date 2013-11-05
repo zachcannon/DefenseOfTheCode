@@ -34,8 +34,8 @@ NOTE: The code created/submitted for this project will need to compile and run u
 
 ###Phase 3 - 40%
 - Deliver a working game. - 20%
-- Use polymorphism to create the squad. Have squad only coupled to Military Unit. - 10%
-- Avoid using code smells! - 10% minus 1% for every code smell we find
+- Avoid using code smells! - 10% minus 1% for every code smell we find. Exercising phase 1.
+- Use polymorphism in squad. Have squad only coupled to Military Unit and not coupled (referencing) any sub type of MilitaryUnit. - 10%. Exercising phase 2.
 
 ##Learning and Resources
 ###Code Smells
