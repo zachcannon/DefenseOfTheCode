@@ -25,9 +25,9 @@ NOTE: The code created/submitted for this project will need to compile and run u
 
 ###Phase 2 - 30%
 - Solution with different types of units without refactoring into inheritance. - 5%
-- Refactor solution using inheritance and polymorphism. Add at least two more types of sub units. - 10%
+- Refactor solution using inheritance and polymorphism. Add at least two more types of military units. - 10%
 - Essay reflecting on the two solutions above. - 15%
-  - What were both solutions doing?
+  - Explain what you did for each?
   - If we wanted to add the additional types of military units from part two (where we used inheritance) to part one (no inheritance), what would we have to do?
   - When do we want to use one versus the other?
   - Other benefits of using polymorphism?
