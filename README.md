@@ -17,17 +17,25 @@ See [SampleSolution.md](SampleSolution.md) to get an idea of what to submit.
 
 NOTE: The code created/submitted for this project will need to compile and run using g++.
 
-###Phase 1
-- Short answers (identified code smells, refactoring techniques used to eliminate the identified code smells)
-- Refactored solution.
+###Phase 1 - 30%
+- Short answers 
+  - Identify at least 4 code smells. - 10%
+  - For each code smell, remove the code smell using the appropriate refactoring technique. - 10%
+- Deliver code that is working. - 10%
 
-###Phase 2
-- Solution with different types of units without refactoring into inheritance.
-- Refactored solution (inheritance / polymorphism) with more types of units.
-- Essay reflecting on adding additional types through subclass over the first solution in this phase (maintainability, readability, duplicate code, adding types or behaviors, etc).
+###Phase 2 - 30%
+- Solution with different types of units without refactoring into inheritance. - 5%
+- Refactor solution using inheritance and polymorphism. Add at least two more types of sub units. - 10%
+- Essay reflecting on the two solutions above. - 15%
+  - What were both solutions doing?
+  - When do we want to use one versus the other?
+  - If we wanted to add the new classes from part two (where we used inheritance) to part one (no inheritance), what would we have to do?
+  - Other benefits of using polymorphism?
 
-###Phase 3
-Complete game solution following good design.
+###Phase 3 - 40%
+- Deliver a working game. - 20%
+- Use polymorphism to create the squad. Have squad only coupled to Military Unit. - 10%
+- Avoid using code smells! - 10% minus 1% for every code smell we find
 
 ##Learning and Resources
 ###Code Smells
