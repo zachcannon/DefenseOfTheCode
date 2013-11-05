@@ -28,14 +28,14 @@ NOTE: The code created/submitted for this project will need to compile and run u
 - Refactor solution using inheritance and polymorphism. Add at least two more types of sub units. - 10%
 - Essay reflecting on the two solutions above. - 15%
   - What were both solutions doing?
+  - If we wanted to add the additional types of military units from part two (where we used inheritance) to part one (no inheritance), what would we have to do?
   - When do we want to use one versus the other?
-  - If we wanted to add the new classes from part two (where we used inheritance) to part one (no inheritance), what would we have to do?
   - Other benefits of using polymorphism?
 
 ###Phase 3 - 40%
 - Deliver a working game. - 20%
-- Avoid using code smells! - 10% minus 1% for every code smell we find. Exercising phase 1.
-- Use polymorphism in squad. Have squad only coupled to Military Unit and not coupled (referencing) any sub type of MilitaryUnit. - 10%. Exercising phase 2.
+- Avoid using code smells! - 10% minus 1% for every code smell we find. This is exercising phase 1.
+- Use polymorphism in squad. Have squad only coupled to Military Unit and not coupled (referencing) any sub type of MilitaryUnit. - 10%. This is exercising phase 2.
 
 ##Learning and Resources
 ###Code Smells
