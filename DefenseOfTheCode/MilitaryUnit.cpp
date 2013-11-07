@@ -20,6 +20,5 @@ void MilitaryUnit::fight(MilitaryUnit *opponent) {
 };
 
 bool MilitaryUnit::isAlive() {
-	if (this->health > 0) return false;
-	else return true;
+	return this->health > 0;
 }
