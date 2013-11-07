@@ -18,3 +18,8 @@ string MilitaryUnit::getName() { return name; }
 void MilitaryUnit::fight(MilitaryUnit *opponent) {
 	opponent->receiveDamage(attackDamage);
 };
+
+bool MilitaryUnit::isAlive() {
+	if (this->health > 0) return false;
+	else return true;
+}
