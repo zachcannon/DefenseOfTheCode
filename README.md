@@ -5,7 +5,7 @@ See project outline ([ProjectOutline.md](ProjectOutline.md)).
 We encourage collaborating with other students to learn and teach from each other even when he/she is not your partner. 
 
 ##Submission
-Submit code and short answers on CSNET separately for each phase. 
+Submit code and short answers on CSNET separately for each phase. Submit a hardcopy to the TA as well. 
 We will only require a single submission for each pair or individual.
 ###Deadlines
 1. Phase 1 - Midnight of Tuesday, November 5th
