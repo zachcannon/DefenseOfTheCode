@@ -10,7 +10,7 @@ class MilitaryUnit{
 
 public:
 	MilitaryUnit(string name, int attackDamage);
-	void fight(MilitaryUnit *opponent);
+	void fight(MilitaryUnit &opponent);
 	void receiveDamage(int damage);
 	string getName();
 	bool isAlive();

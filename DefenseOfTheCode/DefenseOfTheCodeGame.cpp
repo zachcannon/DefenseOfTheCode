@@ -14,8 +14,8 @@ void DefenseOfTheCodeGame::run() {
 };
 
 void DefenseOfTheCodeGame::playRound() {
-	unitA->fight(unitB);
-	unitB->fight(unitA);
+	unitA->fight(*unitB);
+	unitB->fight(*unitA);
 }
 
 bool DefenseOfTheCodeGame::isGameOver() {
