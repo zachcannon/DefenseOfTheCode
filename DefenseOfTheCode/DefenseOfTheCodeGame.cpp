@@ -2,9 +2,9 @@
 
 using namespace std;
 
-DefenseOfTheCodeGame::DefenseOfTheCodeGame() {
-	unitA = new MilitaryUnit("Unit A", 15);
-	unitB = new MilitaryUnit("Unit B", 20);
+DefenseOfTheCodeGame::DefenseOfTheCodeGame(MilitaryUnit& unitA, MilitaryUnit& unitB) {
+	this->unitA = unitA;
+	this->unitB = unitB;
 };
 
 void DefenseOfTheCodeGame::run() {
@@ -14,19 +14,19 @@ void DefenseOfTheCodeGame::run() {
 };
 
 void DefenseOfTheCodeGame::playRound() {
-	unitA->fight(*unitB);
-	unitB->fight(*unitA);
+	unitA.fight(unitB);
+	unitB.fight(unitA);
 }
 
 bool DefenseOfTheCodeGame::isGameOver() {
-	return !unitA->isAlive() || !unitB->isAlive();
+	return !unitA.isAlive() || !unitB.isAlive();
 };
 
 bool DefenseOfTheCodeGame::isDraw() {
-	return !unitA->isAlive() && !unitB->isAlive();
+	return !unitA.isAlive() && !unitB.isAlive();
 }
 
 string DefenseOfTheCodeGame::getWinner() {
-	if (unitA->isAlive()) return unitA->getName();
-	return unitB->getName();
+	if (unitA.isAlive()) return unitA.getName();
+	return unitB.getName();
 }

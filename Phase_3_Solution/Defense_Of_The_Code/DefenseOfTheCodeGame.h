@@ -1,14 +1,14 @@
 #include <string>
-#include "MilitaryUnit.h"
+#include "Squad.h"
 
 using namespace std;
 
 class DefenseOfTheCodeGame{
-	MilitaryUnit unitA;
-	MilitaryUnit unitB;
+	Squad *squadA;
+	Squad *squadB;
 	void playRound();
 public:
-	DefenseOfTheCodeGame(MilitaryUnit& unitA, MilitaryUnit& unitB);
+	DefenseOfTheCodeGame();
 	void run();
 	bool isGameOver();
 	bool isDraw();

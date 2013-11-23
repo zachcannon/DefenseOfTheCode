@@ -7,18 +7,18 @@ using namespace std;
 void printWinner(DefenseOfTheCodeGame game) {
 	if (game.isDraw())
 		cout << "Tie!" << endl;
-	else
-		cout << game.getWinner() + " is the victor!" << endl;
+	else {
+		string winner = game.getWinner();
+		cout << winner << " is the victor!" << endl;
+	}
 }
 
 int main() {
-	MilitaryUnit unitA("Unit A", 15);
-	MilitaryUnit unitB("Unit B", 20);
-
-	DefenseOfTheCodeGame game(unitA, unitB);
+	DefenseOfTheCodeGame game = DefenseOfTheCodeGame();
 
 	game.run();
 
+	string winner = game.getWinner();
 	printWinner(game);
 
 	char anyKey;
