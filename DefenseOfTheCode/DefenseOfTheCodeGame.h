@@ -1,16 +1,20 @@
 #include <string>
-#include "MilitaryUnit.h"
+#include <iostream>
+#include "Squad.h"
 
 using namespace std;
 
 class DefenseOfTheCodeGame{
-	MilitaryUnit unitA;
-	MilitaryUnit unitB;
+	Squad *squadA;
+	Squad *squadB;
 	void playRound();
-public:
-	DefenseOfTheCodeGame(MilitaryUnit& unitA, MilitaryUnit& unitB);
-	void run();
 	bool isGameOver();
+	void popluateSquad(Squad & squad, vector<string> squadName);
+		
+public:
+	DefenseOfTheCodeGame(vector<string> squadA, vector<string> squadB);
+	void run();
 	bool isDraw();
+
 	string getWinner();
 };

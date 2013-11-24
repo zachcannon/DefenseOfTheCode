@@ -1,8 +1,14 @@
+#ifndef MILITARYUNIT_H
+#define MILITARYUNIT_H
+
 #include <string>
 
 using namespace std;
 
+class Squad;
+
 class MilitaryUnit{
+protected:
 	string name;
 	int attackDamage;
 	int armorDefense;
@@ -10,8 +16,12 @@ class MilitaryUnit{
 
 public:
 	MilitaryUnit(string name, int attackDamage);
-	void fight(MilitaryUnit &opponent);
-	void receiveDamage(int damage);
-	string getName();
+
+	virtual void fight(Squad &enemySquad);
+	virtual void receiveDamage(int damage);
 	bool isAlive();
+
+	string getName();
 };
+
+#endif

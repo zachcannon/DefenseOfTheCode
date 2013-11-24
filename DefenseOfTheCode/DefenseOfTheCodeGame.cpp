@@ -2,31 +2,29 @@
 
 using namespace std;
 
-DefenseOfTheCodeGame::DefenseOfTheCodeGame(MilitaryUnit& unitA, MilitaryUnit& unitB) {
-	this->unitA = unitA;
-	this->unitB = unitB;
+DefenseOfTheCodeGame::DefenseOfTheCodeGame(vector<string> squadAUnits, vector<string> squadBUnits) {
+	squadA = new Squad("Squad A");
+	squadB = new Squad("Squad B");
+
+	popluateSquad(*squadA, squadAUnits);
+	popluateSquad(*squadB, squadBUnits);
 };
 
-void DefenseOfTheCodeGame::run() {
-	while (!isGameOver()) {
-		playRound();
+void DefenseOfTheCodeGame::popluateSquad(Squad & squad, vector<string> squadUnits) {
+	for (int i=0; i<squadUnits.size(); i++) {
+		squad.addUnit( squadUnits.at(i));
 	}
-};
-
-void DefenseOfTheCodeGame::playRound() {
-	unitA.fight(unitB);
-	unitB.fight(unitA);
 }
 
-bool DefenseOfTheCodeGame::isGameOver() {
-	return !unitA.isAlive() || !unitB.isAlive();
+void DefenseOfTheCodeGame::run() {
+	squadA->engageInBattle(*squadB);
 };
 
 bool DefenseOfTheCodeGame::isDraw() {
-	return !unitA.isAlive() && !unitB.isAlive();
+	return !squadA->hasUnitsAlive() && !squadB->hasUnitsAlive();
 }
 
 string DefenseOfTheCodeGame::getWinner() {
-	if (unitA.isAlive()) return unitA.getName();
-	return unitB.getName();
+	if (squadA->hasUnitsAlive()) return squadA->getSquadName();
+	else return squadB->getSquadName();
 }
