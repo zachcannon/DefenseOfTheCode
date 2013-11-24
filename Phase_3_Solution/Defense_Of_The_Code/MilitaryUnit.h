@@ -5,6 +5,8 @@
 
 using namespace std;
 
+class Squad;
+
 class MilitaryUnit{
 protected:
 	string name;
@@ -14,10 +16,12 @@ protected:
 
 public:
 	MilitaryUnit(string name, int attackDamage);
-	virtual void fight(MilitaryUnit &opponent);
+
+	virtual void fight(Squad &enemySquad);
 	virtual void receiveDamage(int damage);
-	string getName();
 	bool isAlive();
+
+	string getName();
 };
 
 #endif

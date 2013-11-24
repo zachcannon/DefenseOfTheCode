@@ -2,18 +2,19 @@
 
 using namespace std;
 
-DefenseOfTheCodeGame::DefenseOfTheCodeGame() {
-	squadA = new Squad("Squadsy A");
-	squadB = new Squad("Squadsy B");
+DefenseOfTheCodeGame::DefenseOfTheCodeGame(vector<string> squadAUnits, vector<string> squadBUnits) {
+	squadA = new Squad("Squad A");
+	squadB = new Squad("Squad B");
 
-	squadA->addUnitToSquad("MilitaryUnit");
-	squadA->addUnitToSquad("Tank");
-	squadA->addUnitToSquad("Monk");
-
-	squadB->addUnitToSquad("Tank");
-	squadB->addUnitToSquad("Monk");
-	squadB->addUnitToSquad("Mage");
+	popluateSquad(*squadA, squadAUnits);
+	popluateSquad(*squadB, squadBUnits);
 };
+
+void DefenseOfTheCodeGame::popluateSquad(Squad & squad, vector<string> squadUnits) {
+	for (int i=0; i<squadUnits.size(); i++) {
+		squad.addUnit( squadUnits.at(i));
+	}
+}
 
 void DefenseOfTheCodeGame::run() {
 	squadA->engageInBattle(*squadB);

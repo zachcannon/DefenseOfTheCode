@@ -2,6 +2,8 @@
 
 using namespace std;
 
+class Squad;
+
 class Tank:public MilitaryUnit {
 	int damageReduction;
 

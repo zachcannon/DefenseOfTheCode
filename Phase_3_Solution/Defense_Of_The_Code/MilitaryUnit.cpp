@@ -1,3 +1,4 @@
+#include "Squad.h"
 #include "MilitaryUnit.h"
 
 using namespace std;
@@ -11,12 +12,12 @@ void MilitaryUnit::receiveDamage(int damage) {
 	health -= (damage - armorDefense);
 }
 
-string MilitaryUnit::getName() { return name; }
-
-void MilitaryUnit::fight(MilitaryUnit &opponent) {
-	opponent.receiveDamage(attackDamage);
-};
+void MilitaryUnit::fight(Squad &enemySquad) {
+	enemySquad.takeDamage(attackDamage);
+}
 
 bool MilitaryUnit::isAlive() {
 	return this->health > 0;
 }
+
+string MilitaryUnit::getName() { return name; }

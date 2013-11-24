@@ -5,11 +5,9 @@ using namespace std;
 Squad::Squad(string squadName) : squadName(squadName) { };
 
 void Squad::engageInBattle(Squad& enemySquad) {
-	while (this->hasUnitsAlive() && enemySquad.hasUnitsAlive()) {
-		
-		this->team.front()->fight(*enemySquad.team.front());
-		enemySquad.team.front()->fight(*this->team.front());
-
+	while (this->hasUnitsAlive() && enemySquad.hasUnitsAlive()) {		
+		this->team.front()->fight(enemySquad);
+		enemySquad.team.front()->fight(*this);
 		checkTheBattlefieldForDeath(enemySquad);
 	}
 }
@@ -19,7 +17,20 @@ void Squad::checkTheBattlefieldForDeath(Squad& enemySquad) {
 	if (!enemySquad.team.front()->isAlive()) enemySquad.team.pop();
 }
 
-void Squad::addUnitToSquad(string unitName) {
+void Squad::takeSplashDamage(int damage) {
+	for (int i=0; i<team.size(); i++) {
+		MilitaryUnit* unit = team.front();
+		unit->receiveDamage(damage);
+		team.pop();
+		team.push(unit);
+	}
+}
+
+void Squad::takeDamage(int damage) {
+	team.front()->receiveDamage(damage);
+}
+
+void Squad::addUnit(string unitName) {
 	MilitaryUnit * unit;
 
 	if (unitName == "Mage") {
@@ -27,16 +38,16 @@ void Squad::addUnitToSquad(string unitName) {
 	} else if (unitName == "Monk") {
 		unit = new Monk("Monky McMonkerson", 20, 5);
 	} else if (unitName == "Tank") {
-		unit = new Tank("Tanky McTankerson", 20, 7);
+		unit = new Tank("Tanky McTankerson", 20, 4);
 	} else {
-		unit = new MilitaryUnit("Plain Jane", 15);
+		unit = new MilitaryUnit("Plain Jane", 10);
 	}
 
 	this->team.push(unit);
 }
 
 bool Squad::hasUnitsAlive() {
-	if (this->team.size() < 1) return false;
+	if (this->team.empty()) return false;
 	else return true;
 }
 
